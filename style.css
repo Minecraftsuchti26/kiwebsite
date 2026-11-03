@@ -1,0 +1,210 @@
+
+/* ALLGEMEINES DESIGN */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #101820;
+    color: white;
+    line-height: 1.7;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(135deg, #d71920, #850b10);
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+}
+
+header h1 {
+    font-size: 45px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+header p {
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+/* NAVIGATION */
+nav {
+    background-color: #080d12;
+    padding: 18px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 18px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ff3333;
+}
+
+/* STARTBEREICH */
+.hero {
+    min-height: 450px;
+    background:
+        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)),
+        url('https://images.unsplash.com/photo-1519861531473-9200262188bf')
+        center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+}
+
+.hero h2 {
+    font-size: 55px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    animation: fadeIn 1.5s ease;
+}
+
+.hero p {
+    font-size: 22px;
+    margin-top: 15px;
+    color: #eeeeee;
+}
+
+/* SEITENABSCHNITTE */
+section {
+    padding: 65px 10%;
+    max-width: 1400px;
+    margin: auto;
+}
+
+section h2 {
+    color: #ff3333;
+    font-size: 32px;
+    margin-bottom: 25px;
+    border-left: 5px solid #d71920;
+    padding-left: 15px;
+}
+
+section p {
+    font-size: 17px;
+    margin-bottom: 15px;
+    color: #dddddd;
+}
+
+/* KARTEN */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.card {
+    background: linear-gradient(145deg, #263541, #18232d);
+    padding: 30px;
+    border-radius: 12px;
+    flex: 1;
+    min-width: 230px;
+    border-bottom: 4px solid #d71920;
+    transition: 0.3s;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(215,25,32,0.25);
+}
+
+.card h3 {
+    color: #ff4444;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.card p {
+    font-size: 16px;
+}
+
+/* HIGHLIGHTS */
+.highlight {
+    color: #ff4444;
+    font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+    background-color: #080d12;
+    text-align: center;
+    padding: 35px 20px;
+    margin-top: 40px;
+    border-top: 3px solid #d71920;
+}
+
+footer p {
+    color: #aaaaaa;
+    font-size: 14px;
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* HANDY-DESIGN */
+@media screen and (max-width: 768px) {
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 7px;
+        font-size: 14px;
+    }
+
+    .hero {
+        min-height: 350px;
+    }
+
+    .hero h2 {
+        font-size: 35px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    section {
+        padding: 40px 6%;
+    }
+
+    section h2 {
+        font-size: 25px;
+    }
+
+    .card-container {
+        flex-direction: column;
+    }
+}
