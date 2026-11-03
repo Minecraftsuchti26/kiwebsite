@@ -1,0 +1,260 @@
+Anmelden
+Kostenlos registrieren
+erstelle mir einen html code für eine website über andy schmid
+
+Hier ist eine moderne, übersichtliche und sportliche Website über Andy Schmid, den Schweizer Handballstar. Die Website enthält Informationen über seine Karriere, Erfolge, seine Person und seine Bedeutung für den Schweizer Handball.
+
+Der HTML-Code enthält auch CSS-Design und ist direkt ausführbar.
+
+HTML-Code für deine Website
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andy Schmid – Handball-Legende</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #101820;
+            color: white;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #d71920;
+            padding: 25px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 42px;
+            letter-spacing: 2px;
+        }
+
+        nav {
+            background: #080d12;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #d71920;
+        }
+
+        .hero {
+            min-height: 400px;
+            background: linear-gradient(
+                rgba(0,0,0,0.65),
+                rgba(0,0,0,0.65)
+            ), url('https://images.unsplash.com/photo-1519861531473-9200262188bf')
+            center/cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 30px;
+        }
+
+        .hero h2 {
+            font-size: 48px;
+            color: #ffffff;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-top: 15px;
+        }
+
+        section {
+            padding: 50px 10%;
+        }
+
+        section h2 {
+            color: #e52b32;
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .card {
+            background: #1e2a35;
+            padding: 25px;
+            border-radius: 12px;
+            flex: 1;
+            min-width: 220px;
+            border-bottom: 4px solid #d71920;
+        }
+
+        .card h3 {
+            color: #ff5555;
+            margin-bottom: 10px;
+        }
+
+        .highlight {
+            color: #ff5555;
+            font-weight: bold;
+        }
+
+        footer {
+            background: #080d12;
+            text-align: center;
+            padding: 25px;
+            margin-top: 30px;
+        }
+
+        @media(max-width: 600px) {
+            .hero h2 {
+                font-size: 32px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>ANDY SCHMID</h1>
+        <p>Eine Schweizer Handball-Legende</p>
+    </header>
+
+    <nav>
+        <a href="#start">Start</a>
+        <a href="#person">Über Andy</a>
+        <a href="#karriere">Karriere</a>
+        <a href="#erfolge">Erfolge</a>
+    </nav>
+
+    <div class="hero" id="start">
+        <h2>Andy Schmid</h2>
+        <p>Leidenschaft. Talent. Erfolg.</p>
+    </div>
+
+    <section id="person">
+        <h2>Wer ist Andy Schmid?</h2>
+        <p>
+            Andy Schmid ist ein ehemaliger Schweizer Handballspieler
+            und gehört zu den bekanntesten Handballern der Schweiz.
+            Er wurde am 30. August 1983 geboren und spielte auf der
+            Position Rückraum Mitte.
+        </p>
+        <p>
+            Besonders bekannt wurde er durch seine Zeit bei den
+            Rhein-Neckar Löwen in Deutschland. Mit seinem Spielverständnis,
+            seiner Technik und seinen Führungsqualitäten begeisterte
+            er zahlreiche Handballfans.
+        </p>
+    </section>
+
+    <section id="karriere">
+        <h2>Seine Karriere</h2>
+
+        <div class="card-container">
+
+            <div class="card">
+                <h3>Karrierebeginn</h3>
+                <p>
+                    Andy Schmid begann seine Handballkarriere
+                    in der Schweiz und entwickelte sich schnell
+                    zu einem talentierten Spieler.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Rhein-Neckar Löwen</h3>
+                <p>
+                    Bei den Rhein-Neckar Löwen wurde er zu
+                    einem der wichtigsten Spieler und prägte
+                    die Mannschaft über viele Jahre.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Nationalmannschaft</h3>
+                <p>
+                    Auch für die Schweizer Nationalmannschaft
+                    war er ein wichtiger Leistungsträger
+                    und Kapitän.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="erfolge">
+        <h2>Seine grössten Erfolge</h2>
+
+        <div class="card-container">
+
+            <div class="card">
+                <h3>Deutscher Meister</h3>
+                <p>
+                    2016 und 2017 gewann er mit den
+                    Rhein-Neckar Löwen die deutsche Meisterschaft.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Spieler des Jahres</h3>
+                <p>
+                    Er wurde mehrfach als bester Spieler
+                    der deutschen Bundesliga ausgezeichnet.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Schweizer Nationalteam</h3>
+                <p>
+                    Er prägte den Schweizer Handball über
+                    viele Jahre und führte die Nationalmannschaft
+                    als Kapitän an.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section>
+        <h2>Warum ist Andy Schmid so besonders?</h2>
+        <p>
+            Andy Schmid beeindruckte nicht nur durch seine Tore,
+            sondern auch durch seine Übersicht, seine Kreativität
+            und seine Fähigkeit, seine Mitspieler besser zu machen.
+            Er gilt als einer der bedeutendsten Schweizer Handballer
+            aller Zeiten.
+        </p>
+    </section>
+
+    <footer>
+        <p>© 2026 – Website über Andy Schmid</p>
+        <p>Eine Hommage an eine Schweizer Handball-Legende.</p>
+    </footer>
+
+</body>
+</html>
